@@ -10,7 +10,7 @@
 body {
     font-family: "Rubik", sans-serif;
     align-items: center;
-    min-height: 90vh;
+    min-height: 100vh;
     background-image: url('../img/bg.jpg');
     background-position: center;
 }
@@ -56,7 +56,7 @@ nav .logo {
 }
 
 .centro {
-    margin-top: 115px;
+    margin-top: 13%;
     display: flex;
     flex-direction: column;
     align-items: center;
