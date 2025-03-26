@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo</title>
+    <link rel="stylesheet" href="estilos/inicio.css">
+</head>
+<body>
+        <!-- sidebar -->
+        <nav class="navbar">
+            <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href=""><img class="close" src="img/close.png" alt=""></a></li>
+            <li><a href="pages/calc.html">Calculadora</a></li>
+            <li><a href="#">O carbono no planeta</a></li>
+            <li><a href="#">Desenvolvedor</a></li>
+            </ul>
+         </nav>
+         
+         <!-- navbar -->
+        <nav class="navbar">
+           <ul>
+            <li><img class="logo" src="img/Logo.png" alt=""></li>
+            <li class="hideOnMobile"><a href="#">O carbono no planeta</a></li>
+            <li class="hideOnMobile"><a href="#">Desenvolvedor</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><img class="open" src="img/open.png" alt=""></a></li>
+           </ul>
+        </nav>
+
+        <div class="centro">
+            <img src="img/planta.png" alt="">
+            <a href="pages/calc.html"><button>Calculadora</button></a>
+        </div>
+
+        <script>
+            function showSidebar () {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+            
+            function hideSidebar () {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }    
+
+        </script>
+</body>
+</html>
