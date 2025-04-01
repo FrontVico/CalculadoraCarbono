@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Por que usar o ChemConvert?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../estilos/becase.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+
+
+    <!-- sidebar -->
+    <nav class="navbar">
+        <ul class="sidebar">
+        <li onclick="hideSidebar()"><a href=""><img class="close" src="../img/close.png" alt=""></a></li>
+        <li><a href="pages/calc.html">Calculadora</a></li>
+        <li><a href="../index.html">Pagina Inicial</a></li>
+        <li><a href="#">Desenvolvedor</a></li>
+        </ul>
+     </nav>
+     
+     <!-- navbar -->
+    <nav class="navbar">
+       <ul>
+        <li><img class="logo" src="../img/Logo.png" alt=""></li>
+        <li class="hideOnMobile"><a href="../index.html">Pagina incial</a></li>
+        <li class="hideOnMobile"><a href="../pages/calc.html">Calculadora</a></li>
+        <li class="hideOnMobile"><a href="#">Desenvolvedor</a></li>
+        <li class="menu-button" onclick="showSidebar()"><a href="#"><img class="open" src="../img/open.png" alt=""></a></li>
+       </ul>
+    </nav>
+
+    <!-- Seção "Por que usar?" -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                <span class="block">Por que nossa Calculadora de</span>
+                <span class="block text-eco-500">Carbono é essencial?</span>
+            </h2>
+            <p class="mt-4 text-xl text-gray-600">
+                Descubra como monitorar sua pegada ecológica pode mudar seu impacto no planeta
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="text-eco-500 mb-4">
+                    <i class="fas fa-leaf text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Precisão Científica</h3>
+                <p class="text-gray-600">
+                    Cálculos baseados em dados do IPCC e metodologias internacionais para medir emissões de CO₂ com confiabilidade.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="text-eco-500 mb-4">
+                    <i class="fas fa-chart-line text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Conscientização</h3>
+                <p class="text-gray-600">
+                    Visualize em tempo real como seus hábitos impactam o meio ambiente e descubra onde reduzir suas emissões.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="text-eco-500 mb-4">
+                    <i class="fas fa-home text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Personalização</h3>
+                <p class="text-gray-600">
+                    Calcule desde sua casa até viagens internacionais, com categorias específicas para transporte, energia e consumo.
+                </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="text-eco-500 mb-4">
+                    <i class="fas fa-globe-americas text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Impacto Global</h3>
+                <p class="text-gray-600">
+                    Compare sua pegada com médias nacionais e descubra como pequenas mudanças contribuem para metas climáticas.
+                </p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="text-eco-500 mb-4">
+                    <i class="fas fa-lightbulb text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Dicas Práticas</h3>
+                <p class="text-gray-600">
+                    Receba recomendações personalizadas para reduzir emissões e adotar um estilo de vida mais sustentável.
+                </p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="text-eco-500 mb-4">
+                    <i class="fas fa-seedling text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Compensação</h3>
+                <p class="text-gray-600">
+                    Conheça opções para neutralizar seu carbono através de projetos de reflorestamento e energia limpa.
+                </p>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-16 text-center">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Pronto para começar sua jornada sustentável?</h3>
+            <a href="calc.html">
+                <button id="ctaButton" class="bg-eco-500 hover:bg-eco-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors duration-300 transform hover:scale-105">
+                    Calcule Sua Pegada Agora
+                </button>
+            </a>
+            <p class="mt-4 text-gray-500">100% gratuito - leva menos de 5 minutos</p>
+        </div>
+    </section>
+
+    <script>
+        // Animação para o botão CTA
+        document.getElementById('ctaButton').addEventListener('click', function() {
+            alert('Redirecionando para a Calculadora de Carbono...');
+            // window.location.href = 'calculadora.html';
+        });
+
+        // Efeito de hover nos cards (ícones pulam)
+        const cards = document.querySelectorAll('.bg-white');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.querySelector('i').classList.add('animate-bounce');
+            });
+            card.addEventListener('mouseleave', function() {
+                this.querySelector('i').classList.remove('animate-bounce');
+            });
+        });
+    </script>
+    
+    <script>
+        function showSidebar () {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        
+        function hideSidebar () {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }    
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        eco: {
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
