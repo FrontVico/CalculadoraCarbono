@@ -55,7 +55,6 @@ nav .logo {
     justify-content: center;
 }
 
-/* From Uiverse.io by cssbuttons-io */ 
 button {
     padding: 1.3em 3em;
     font-size: 12px;
@@ -129,4 +128,12 @@ button {
     .sidebar {
         width: 100%;
     }
+}
+
+.qrcode {
+    transition: all 0.3s ease;
+}
+.qrcode:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.2);
 }

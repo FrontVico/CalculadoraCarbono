@@ -15,7 +15,7 @@
     <nav class="navbar">
         <ul class="sidebar">
         <li onclick="hideSidebar()"><a href=""><img class="close" src="../img/close.png" alt=""></a></li>
-        <li><a href="pages/calc.html">Calculadora</a></li>
+        <li><a href="../pages/calc.html">Calculadora</a></li>
         <li><a href="../index.html">Pagina Inicial</a></li>
         <li><a href="#">Desenvolvedor</a></li>
         </ul>
@@ -26,7 +26,7 @@
        <ul>
         <li><img class="logo" src="../img/Logo.png" alt=""></li>
         <li class="hideOnMobile"><a href="../index.html">Pagina incial</a></li>
-        <li class="hideOnMobile"><a href="calc.html">Calculadora</a></li>
+        <li class="hideOnMobile"><a href="../pages/calc.html">Calculadora</a></li>
         <li class="hideOnMobile"><a href="#">Desenvolvedor</a></li>
         <li class="menu-button" onclick="showSidebar()"><a href="#"><img class="open" src="../img/open.png" alt=""></a></li>
        </ul>
@@ -112,16 +112,40 @@
             </div>
         </div>
 
-        <!-- CTA -->
-        <div class="mt-16 text-center">
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Pronto para começar sua jornada sustentável?</h3>
-            <a href="calc.html">
-                <button id="ctaButton" class="bg-eco-500 hover:bg-eco-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors duration-300 transform hover:scale-105">
-                    Calcule Sua Pegada Agora
-                </button>
-            </a>
-            <p class="mt-4 text-gray-500">100% gratuito - leva menos de 5 minutos</p>
+<!-- CTA com QR Code Integrado -->
+<div class="mt-16 text-center">
+    <h3 class="text-2xl font-bold text-gray-900 mb-4">Pronto para começar sua jornada sustentável?</h3>
+    
+    <!-- Botão Principal -->
+    <div class="mb-8">
+        <a href="calc.html">
+            <button id="ctaButton" class="bg-eco-500 hover:bg-eco-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all duration-300 hover:scale-105 shadow-md">
+                Calcule Sua Pegada Agora
+            </button>
+        </a>
+    </div>
+    
+    <!-- Divisor Estilizado -->
+    <div class="relative flex items-center justify-center mb-8">
+        <div class="flex-grow border-t border-gray-300"></div>
+        <span class="mx-4 text-gray-500">ou</span>
+        <div class="flex-grow border-t border-gray-300"></div>
+    </div>
+    
+    <!-- QR Code com Instruções -->
+    <div class="bg-white p-6 rounded-xl shadow-sm inline-block border border-gray-100">
+        <p class="text-sm text-gray-600 mb-3 font-medium">Acesse rapidamente pelo celular</p>
+        <div class="p-2 bg-white rounded-lg border-2 border-eco-300 inline-block">
+            <img class="qrcode w-28 h-28" src="../img/qrcode.png" alt="QR Code para Calculadora de Carbono">
         </div>
+        <p class="mt-3 text-xs text-gray-500 max-w-[180px] mx-auto">Escaneie este código com sua câmera</p>
+    </div>
+    
+    <!-- Rodapé do CTA -->
+    <p class="mt-8 text-gray-500 text-sm">
+        <i class="fas fa-lock text-eco-500 mr-1"></i> 100% gratuito • Leva menos de 5 minutos
+    </p>
+</div>
     </section>
 
     <script>
